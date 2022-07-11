@@ -1,0 +1,12 @@
+OLED.init(128, 64)
+OLED.clear()
+basic.forever(function () {
+    OLED.writeStringNewLine("LETTURA")
+    OLED.writeStringNewLine("INTESITA' DI LUCE")
+    OLED.newLine()
+    OLED.writeNumNewLine(input.lightLevel())
+    OLED.newLine()
+    OLED.writeStringNewLine("www.adrirobot.it")
+    basic.pause(1000)
+    OLED.clear()
+})
